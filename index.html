@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,9 +21,11 @@
         .font-poppins {
             font-family: "Poppins", sans-serif;
         }
+
         .font-inter {
             font-family: "Inter", sans-serif;
         }
+
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
@@ -44,16 +46,180 @@
 </head>
 
 <!-- body section starts -->
+
 <body>
     <!-- header section strarts -->
-    <header>
+    <header class="font-poppins bg-bike-bg">
+        <!-- navbar starts here -->
+        <nav class="container mx-auto lg:px-[130px] pt-6 lg:pt-12 lg:mb-[64px]">
+            <div>
 
+                <!-- navbar for small device -->
+                <div class="flex gap-[120px] items-center px-[10px] lg:hidden">
+                    <h1 class="text-[35px] font-bold text-white leadingt-[53px]">Go Ride</h1>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-800 rounded-box w-30 text-white font-medium leading-6 space-y-6">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a><a class="btn bg-primary-color font-medium leading-6 border-none">Button</a></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- navbar for large device -->
+                <div class="hidden lg:flex justify-between items-center">
+                    <div>
+                        <h1 class="text-[35px] font-bold text-white leadingt-[53px]">Go Ride</h1>
+                    </div>
+                    <div class="flex items-center gap-[100px]">
+                        <div>
+                            <ul class="menu menu-horizontal px-1 text-white font-medium leading-6 space-x-9">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>News</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="btn bg-primary-color text-white font-medium leading-6 border-none">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar ends -->
+
+        <!-- banner section starts -->
+        <section class="mt-6 lg:mt-[70px] container mx-auto px-[10px] lg:px-[130px] pt-6 lg:pt-12 pb-[10px]">
+            <!-- slide starts -->
+            <div class="carousel w-full lg:pb-[100px]">
+
+                <!-- slide one -->
+                <div id="slide1"
+                    class="carousel-item relative w-full flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center ">
+                    <div class="w-[90vw] lg:w-[30vw]">
+                        <p class="text-[14px] font-light text-white leading-[22px] opacity-85">Computer-controlled
+                            digital transistorized with electronic advance</p>
+                        <h1 class="text-white font-semibold text-[48px] leading-[72px] mb-5">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="text-[#E0E0E0] font-light leading-[24px] mb-5">Amet minim mollit non deserunt
+                            ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div>
+                            <button
+                                class="btn bg-primary-color border-none text-white font-medium leading-6">Purchase</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/slider/bike1.png" class="w-[80vw] lg:w-[40vw]" />
+                    </div>
+                    <div class="absolute flex gap-4 bottom-[310px] lg:bottom-[-80px] right-[10%] lg:right-[50%]">
+                        <a href="#slide4" class="btn btn-circle bg-primary-color text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-primary-color text-white border-none">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide two -->
+                <div id="slide2"
+                    class="carousel-item relative w-full flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center ">
+                    <div class="w-[90vw] lg:w-[30vw]">
+                        <p class="text-[14px] font-light text-white leading-[22px] opacity-85">Computer-controlled
+                            digital transistorized with electronic advance</p>
+                        <h1 class="text-white font-semibold text-[48px] leading-[72px] mb-5">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="text-[#E0E0E0] font-light leading-[24px] mb-5">Amet minim mollit non deserunt
+                            ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div>
+                            <button
+                                class="btn bg-primary-color border-none text-white font-medium leading-6">Purchase</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/slider/bike2.png" class="w-[80vw] lg:w-[40vw]" />
+                    </div>
+                    <div class="absolute flex gap-4 bottom-[310px] lg:bottom-[-80px] right-[10%] lg:right-[50%]">
+                        <a href="#slide1" class="btn btn-circle bg-primary-color text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-primary-color text-white border-none">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide three -->
+                <div id="slide3"
+                    class="carousel-item relative w-full flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center ">
+                    <div class="w-[90vw] lg:w-[30vw]">
+                        <p class="text-[14px] font-light text-white leading-[22px] opacity-85">Computer-controlled
+                            digital transistorized with electronic advance</p>
+                        <h1 class="text-white font-semibold text-[48px] leading-[72px] mb-5">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="text-[#E0E0E0] font-light leading-[24px] mb-5">Amet minim mollit non deserunt
+                            ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div>
+                            <button
+                                class="btn bg-primary-color border-none text-white font-medium leading-6">Purchase</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/slider/bike3.png" class="w-[80vw] lg:w-[40vw]" />
+                    </div>
+                    <div class="absolute flex gap-4 bottom-[310px] lg:bottom-[-80px] right-[10%] lg:right-[50%]">
+                        <a href="#slide2" class="btn btn-circle bg-primary-color text-white border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-primary-color text-white border-none">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide four -->
+                <div id="slide4"
+                    class="carousel-item relative w-full flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center ">
+                    <div class="w-[90vw] lg:w-[30vw]">
+                        <p class="text-[14px] font-light text-white leading-[22px] opacity-85">Computer-controlled
+                            digital transistorized with electronic advance</p>
+                        <h1 class="text-white font-semibold text-[48px] leading-[72px] mb-5">Ride-on R15 V4 with
+                            Smile</h1>
+                        <p class="text-[#E0E0E0] font-light leading-[24px] mb-5">Amet minim mollit non deserunt
+                            ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <div>
+                            <button
+                                class="btn bg-primary-color border-none text-white font-medium leading-6">Purchase</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/slider/bike4.png" class="w-[80vw] lg:w-[40vw]" />
+                    </div>
+                    <div class="absolute flex gap-4 bottom-[310px] lg:bottom-[-80px] right-[10%] lg:right-[50%]">
+                        <a href="#slide3" class="btn btn-circle bg-primary-color text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-primary-color text-white border-none">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- slide ends -->
+        </section>
+        <!-- banner section ends -->
     </header>
     <!-- header section ends -->
 
+
     <!-- main section starts -->
     <main>
+        <!-- bike feature section starts -->
+        <section class="mt-[64px]">
 
+        </section>
+        <!-- bike feature section ends -->
     </main>
     <!-- main section ends -->
 
@@ -64,4 +230,5 @@
     <!-- footer section ends -->
 </body>
 <!-- body section ends -->
+
 </html>
